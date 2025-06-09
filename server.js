@@ -2,11 +2,11 @@
 const express = require('express');
 const cors = require('cors');
 const multer = require('multer');
-
+const OpenAI = require("openai");
 const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 require('dotenv').config();
-const OpenAI = require("openai");
+
 const app = express();
 app.use(cors());
 app.use(express.json());
